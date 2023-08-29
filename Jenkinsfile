@@ -13,10 +13,5 @@ pipeline {
         }
     }
     
-    post {
-        always {
-            // Clean up resources, stop containers, etc.
-            sh 'docker-compose down'
-        }
-    }
+    // No "post" section here, so the containers will remain running
 }
