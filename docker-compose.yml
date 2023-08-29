@@ -19,7 +19,7 @@ services:
     container_name: graylog
     environment:
       - GRAYLOG_PASSWORD_SECRET=somepasswordpepper
-      - GRAYLOG_ROOT_PASSWORD_SHA2=hashedpassword
+      - GRAYLOG_ROOT_PASSWORD_SHA2=9ea4c3d6c1e43ac4a696d2bcf21d28f536b0c1ac1789f41d29bc4a6d05eb20e6
       - GRAYLOG_HTTP_EXTERNAL_URI=http://192.168.1.253:9000/
     networks:
       - graylog-net
